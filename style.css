@@ -1,20 +1,33 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  background: #f7f7f7;
   color: #333;
 }
 
+/* HERO */
 .hero {
-  background: #1e1e1e;
+  background: linear-gradient(to bottom right, #1e1e1e, #444);
   color: white;
+  padding: 80px 20px;
   text-align: center;
-  padding: 60px 20px;
 }
 
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* NAVBAR */
 .navbar {
-  background: #333;
-  padding: 10px;
+  background: #222;
+  padding: 12px;
 }
 
 .navbar ul {
@@ -31,56 +44,56 @@ body {
   font-weight: bold;
 }
 
+/* SECTIONS */
 .section {
-  padding: 40px;
-  max-width: 900px;
+  padding: 50px;
+  max-width: 1000px;
   margin: auto;
 }
 
 .card {
   background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* PROJECT GRID */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: white;
   padding: 20px;
-  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* GALLERY GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.card img {
-  width: 100%;
-  max-width: 500px;
-  margin-top: 10px;
-  border-radius: 6px;
-}
-
-.skills-list {
-  list-style: none;
-  padding: 0;
-}
-
-.skills-list li {
-  background: #fff;
-  padding: 10px;
-  margin: 8px 0;
-  border-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-
-.gallery {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery img {
-  width: 280px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
+/* FOOTER */
 footer {
-  text-align: center;
-  padding: 20px;
   background: #1e1e1e;
   color: white;
+  text-align: center;
+  padding: 20px;
 }
