@@ -4,12 +4,6 @@ body {
   background: #f7f7f7;
   color: #333;
 }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
-  color: #333;
-}
 
 /* HERO */
 .hero {
@@ -81,6 +75,24 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* SKILLS GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.skill-card h3 {
+  margin-top: 0;
+}
+
 /* PROJECT GRID */
 .project-grid {
   display: grid;
@@ -106,6 +118,24 @@ body {
 .project-card img {
   width: 100%;
   border-radius: 8px;
+}
+
+/* CERTIFICATIONS GRID */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.cert-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cert-card h3 {
+  margin-top: 0;
 }
 
 /* FOOTER */
