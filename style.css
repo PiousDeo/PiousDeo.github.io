@@ -1,8 +1,16 @@
+/* LIGHT THEME (default) */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f7f7f7;
   color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* DARK THEME */
+body.dark {
+  background: #121212;
+  color: #e6e6e6;
 }
 
 /* HERO */
@@ -13,21 +21,18 @@ body {
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin: 0;
-}
-
-.hero h2 {
-  font-size: 24px;
-  margin-top: 10px;
-  opacity: 0.8;
+body.dark .hero {
+  background: linear-gradient(to bottom right, #000, #222);
 }
 
 /* NAVBAR */
 .navbar {
   background: #222;
   padding: 12px;
+}
+
+body.dark .navbar {
+  background: #000;
 }
 
 .navbar ul {
@@ -38,7 +43,8 @@ body {
   padding: 0;
 }
 
-.navbar a {
+.navbar a,
+.theme-toggle {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -49,7 +55,7 @@ body {
   opacity: 0.7;
 }
 
-/* RESUME BUTTON IN NAVBAR */
+/* RESUME BUTTON */
 .resume-nav {
   background: #444;
   padding: 8px 14px;
@@ -60,6 +66,35 @@ body {
   background: #666;
 }
 
+body.dark .resume-nav {
+  background: #333;
+}
+
+body.dark .resume-nav:hover {
+  background: #555;
+}
+
+/* THEME TOGGLE BUTTON */
+.theme-toggle {
+  background: #444;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: #666;
+}
+
+body.dark .theme-toggle {
+  background: #333;
+}
+
+body.dark .theme-toggle:hover {
+  background: #555;
+}
+
 /* SECTIONS */
 .section {
   padding: 50px;
@@ -67,11 +102,18 @@ body {
   margin: auto;
 }
 
+/* CARDS */
 .card {
   background: white;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.05);
 }
 
 /* PROJECT GRID */
@@ -86,7 +128,11 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  transition: transform 0.3s, background 0.3s;
+}
+
+body.dark .project-card {
+  background: #1e1e1e;
 }
 
 .project-card:hover {
@@ -124,3 +170,6 @@ footer {
   padding: 20px;
 }
 
+body.dark footer {
+  background: #000;
+}
