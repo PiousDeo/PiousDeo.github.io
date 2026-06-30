@@ -1,129 +1,45 @@
-/* COLORS */
-:root {
-  --bg-primary: #f5f7fa;
-  --bg-card: #ffffff;
-  --text-main: #1e293b;
-  --accent: #2563eb;
-  --soft-grey: #e2e8f0;
-  --shadow: rgba(0,0,0,0.1);
+/* NAVIGATION TOP-RIGHT */
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
 
-/* GLOBAL */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--bg-primary);
-  color: var(--text-main);
-}
-
-/* HERO */
-.hero {
-  background: var(--soft-grey);
-  text-align: center;
-  padding: 80px 20px 40px;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin: 0;
-}
-
-.hero h2 {
-  font-size: 22px;
-  opacity: 0.7;
-}
-
-.hero p {
-  margin-top: 10px;
-  opacity: 0.8;
-}
-
-/* NAVBAR */
 .navbar ul {
   list-style: none;
-  padding: 0;
-  margin-top: 30px;
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  gap: 25px;
+  padding: 0;
 }
 
 .navbar a {
   text-decoration: none;
-  color: var(--text-main);
   font-weight: bold;
+  color: #1e293b;
 }
 
 .navbar a:hover {
-  color: var(--accent);
+  color: #2563eb;
 }
 
-/* SECTION */
-.section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-/* CARD */
-.card {
-  background: var(--bg-card);
+/* EXPERIENCE CARD LEFT-ALIGNED */
+.exp-card {
+  background: white;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px var(--shadow);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: left;
-  transition: transform 0.3s;
+  max-width: 800px;
+  margin: auto;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* PROJECT CARD */
-.project-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-/* EXPERIENCE */
-.card ul {
-  padding-left: 20px;
-}
-
-/* SKILLS */
-.skills-list {
-  list-style: none;
-  padding: 0;
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-/* GALLERY */
-.gallery {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.gallery img {
-  width: 30%;
-  border-radius: 10px;
-}
-
-/* FOOTER */
-footer {
-  background: var(--soft-grey);
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+/* PROJECT PAGE LEFT-ALIGNED */
+.project-page {
+  text-align: left;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
