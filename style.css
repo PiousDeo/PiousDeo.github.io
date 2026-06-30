@@ -37,6 +37,15 @@ body {
   gap: 30px;
   padding: 0;
 }
+.navbar a[href$=".pdf"] {
+  background: #444;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.navbar a[href$=".pdf"]:hover {
+  background: #666;
+}
 
 .navbar a {
   color: white;
