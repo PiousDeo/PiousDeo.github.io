@@ -51,10 +51,8 @@ body {
   text-align: center;
 }
 
-/* GRID */
-.skills-grid,
-.project-grid,
-.cert-grid {
+/* SKILLS GRID */
+.skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
@@ -86,14 +84,22 @@ body {
   margin: auto;
 }
 
+/* PROJECT GRID */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
 /* PROJECT CARD */
 .project-card {
   background: var(--bg-card);
-  padding: 20px;
   border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow);
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 2px 8px var(--shadow);
+  overflow: hidden;
   transition: transform 0.3s;
 }
 
@@ -103,16 +109,33 @@ body {
 
 .project-card img {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  height: auto;
+}
+
+.project-text {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-text h3 {
+  margin-top: 0;
+  color: var(--accent);
 }
 
 /* CERTIFICATIONS */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
 .cert-card {
   background: var(--bg-card);
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 2px 8px var(--shadow);
+  text-align: left;
 }
 
 /* FOOTER */
@@ -122,4 +145,3 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
-
