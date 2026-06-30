@@ -24,10 +24,8 @@
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#gallery">Gallery</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a class="resume-nav" href="files/Pious_Deo_Resume.pdf" download>📄 Résumé</a></li>
-      <li><button id="theme-toggle" class="theme-toggle">🌙</button></li>
     </ul>
   </nav>
 
@@ -56,38 +54,26 @@
   <section id="projects" class="section">
     <h2>Projects</h2>
 
-   <div class="project-grid">
+    <div class="project-grid">
 
-  <a class="project-card" href="projects/casting_machine.html">
-    <img src="images/casting_machine.jpg" alt="Casting Machine">
-    <h3>Casting Machine Duration Improvement</h3>
-    <p>Redesigned thermal interfaces and feed geometry to increase casting duration.</p>
-  </a>
+      <a class="project-card" href="projects/casting_machine.html">
+        <img src="images/casting_machine.jpg" alt="Casting Machine">
+        <h3>Casting Machine Duration Improvement</h3>
+        <p>Redesigned thermal interfaces and feed geometry to increase casting duration.</p>
+      </a>
 
-  <a class="project-card" href="projects/collector.html">
-    <img src="images/collector.jpg" alt="Collector CAD">
-    <h3>DN40 Three‑Port Collector</h3>
-    <p>Improved flow characteristics and axial offsets.</p>
-  </a>
+      <a class="project-card" href="projects/collector.html">
+        <img src="images/collector.jpg" alt="Collector CAD">
+        <h3>DN40 Three‑Port Collector</h3>
+        <p>Improved flow characteristics and axial offsets.</p>
+      </a>
 
-  <a class="project-card" href="projects/manifold.html">
-    <img src="images/manifold.jpg" alt="Manifold CAD">
-    <h3>Vacuum Feed Manifold</h3>
-    <p>Optimized manifold and splitter tray for vacuum environments.</p>
-  </a>
+      <a class="project-card" href="projects/manifold.html">
+        <img src="images/manifold.jpg" alt="Manifold CAD">
+        <h3>Vacuum Feed Manifold</h3>
+        <p>Optimized manifold and splitter tray for vacuum environments.</p>
+      </a>
 
-</div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section id="gallery" class="section">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/cad_model.jpg" alt="CAD Model">
-      <img src="images/shop_floor.jpg" alt="Shop Floor Work">
-      <img src="images/assembly.jpg" alt="Assembly Work">
-      <img src="images/design.jpg" alt="Design Work">
     </div>
   </section>
 
@@ -102,30 +88,6 @@
   <footer>
     <p>© 2026 Pious Deo — Mechanical Engineer</p>
   </footer>
-
-  <!-- THEME TOGGLE SCRIPT -->
-  <script>
-    const toggleBtn = document.getElementById("theme-toggle");
-    const body = document.body;
-
-    // Load saved theme
-    if (localStorage.getItem("theme") === "dark") {
-      body.classList.add("dark");
-      toggleBtn.textContent = "☀️";
-    }
-
-    toggleBtn.addEventListener("click", () => {
-      body.classList.toggle("dark");
-
-      if (body.classList.contains("dark")) {
-        localStorage.setItem("theme", "dark");
-        toggleBtn.textContent = "☀️";
-      } else {
-        localStorage.setItem("theme", "light");
-        toggleBtn.textContent = "🌙";
-      }
-    });
-  </script>
 
 </body>
 </html>
