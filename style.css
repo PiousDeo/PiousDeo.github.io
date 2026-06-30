@@ -1,129 +1,45 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
-  color: #333;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(to bottom right, #1e1e1e, #444);
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 48px;
-  margin: 0;
-}
-
-.hero h2 {
-  font-size: 24px;
-  margin-top: 10px;
-  opacity: 0.8;
-}
-
-/* NAVBAR */
+/* NAVIGATION TOP-RIGHT */
 .navbar {
-  background: #222;
-  padding: 12px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  gap: 25px;
   padding: 0;
 }
 
 .navbar a {
-  color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
+  color: #1e293b;
 }
 
 .navbar a:hover {
-  opacity: 0.7;
+  color: #2563eb;
 }
 
-/* RESUME BUTTON */
-.resume-nav {
-  background: #444;
-  padding: 8px 14px;
-  border-radius: 6px;
-}
-
-.resume-nav:hover {
-  background: #666;
-}
-
-/* SECTIONS */
-.section {
-  padding: 50px;
-  max-width: 1000px;
+/* EXPERIENCE CARD LEFT-ALIGNED */
+.exp-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+  max-width: 800px;
   margin: auto;
 }
 
-/* CARD */
-.card {
+/* PROJECT PAGE LEFT-ALIGNED */
+.project-page {
+  text-align: left;
+  max-width: 900px;
+  margin: auto;
   background: white;
-  padding: 25px;
-  border-radius: 10px;
+  padding: 30px;
+  border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* SKILLS GRID */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-
-.skill-card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.skill-card h3 {
-  margin-top: 0;
-}
-
-/* PROJECT GRID */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.project-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-/* FOOTER */
-footer {
-  background: #1e1e1e;
-  color: white;
-  text-align: center;
-  padding: 20px;
 }
