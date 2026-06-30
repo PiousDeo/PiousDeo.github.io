@@ -37,20 +37,27 @@ body {
   gap: 30px;
   padding: 0;
 }
-.navbar a[href$=".pdf"] {
-  background: #444;
-  padding: 8px 14px;
-  border-radius: 6px;
-}
-
-.navbar a[href$=".pdf"]:hover {
-  background: #666;
-}
 
 .navbar a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+/* RESUME BUTTON IN NAVBAR */
+.resume-nav {
+  background: #444;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.resume-nav:hover {
+  background: #666;
 }
 
 /* SECTIONS */
@@ -79,6 +86,11 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
 .project-card img {
@@ -97,6 +109,11 @@ body {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
 }
 
 /* FOOTER */
@@ -105,18 +122,5 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-
-  .resume-button {
-  display: inline-block;
-  background: #222;
-  color: white;
-  padding: 12px 22px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
 }
 
-.resume-button:hover {
-  background: #444;
-}
