@@ -32,6 +32,10 @@
   max-width: 800px;
   margin: auto;
 }
+.skill-icon {
+  font-size: 22px;
+  margin-right: 10px;
+}
 
 /* PROJECT PAGE LEFT-ALIGNED */
 .project-page {
