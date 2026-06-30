@@ -1,2 +1,102 @@
-Pious Deo
-Mechanical Engineer | 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pious | Mechanical Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <h1>Pious</h1>
+    <h2>Mechanical Engineer</h2>
+    <p>Specialized in casting machinery, mechanical design, CAD modeling, and process optimization.</p>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a mechanical engineer based in Alkmaar, Netherlands, working at E‑Magy. I develop and improve casting machinery from concept to assembly, focusing on reliability, vacuum environments, and high‑tech production processes.</p>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Mechanical Engineer — E‑Magy</h3>
+      <p><strong>2024–Present</strong></p>
+      <ul>
+        <li>Develop and improve casting machinery from concept to assembly.</li>
+        <li>Implemented mechanical modifications increasing casting duration from minutes to over an hour.</li>
+        <li>Designed DN40 three‑port collector with axial offsets and improved flow characteristics.</li>
+        <li>Optimized vacuum feed manifold and splitter tray designs.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Casting Machine Duration Improvement</h3>
+      <p>Improved casting duration from minutes to over an hour through redesign of thermal interfaces, feed geometry, and vacuum sealing.</p>
+      <img src="images/casting_machine.jpg" alt="Casting Machine">
+    </div>
+
+    <div class="card">
+      <h3>DN40 Three‑Port Collector Redesign</h3>
+      <p>Developed a redesigned collector with cut‑line diagrams, axial offsets, and improved flow characteristics.</p>
+      <img src="images/collector.jpg" alt="Collector CAD">
+    </div>
+
+    <div class="card">
+      <h3>Vacuum Feed Manifold Optimization</h3>
+      <p>Adapted feed manifold and splitter tray designs for vacuum environments, improving flow stability and reducing contamination.</p>
+      <img src="images/manifold.jpg" alt="Manifold CAD">
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>CAD Modeling (SolidWorks, AutoCAD)</li>
+      <li>Finite Element Analysis (ANSYS, SolidWorks Simulation)</li>
+      <li>Casting Machinery Design</li>
+      <li>Vacuum System Engineering</li>
+      <li>Process Optimization</li>
+      <li>Shop‑Floor Implementation</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="images/cad_model.jpg" alt="CAD Model">
+      <img src="images/shop_floor.jpg" alt="Shop Floor Work">
+      <img src="images/assembly.jpg" alt="Assembly Work">
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: <a href="#">Your Profile</a></p>
+    <p>GitHub: <a href="#">github.com/yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Pious — Mechanical Engineer</p>
+  </footer>
+</body>
+</html>
+
