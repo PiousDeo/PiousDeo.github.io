@@ -19,6 +19,48 @@ body {
   color: var(--text-main);
 }
 
+/* NAVBAR */
+.navbar {
+  background: var(--bg-card);
+  box-shadow: 0 2px 8px var(--shadow);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
 /* HERO */
 .hero {
   background: var(--soft-grey);
